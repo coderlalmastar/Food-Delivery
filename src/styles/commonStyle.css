@@ -1,0 +1,23 @@
+.product{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: -150px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .product {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 10px;
+        padding: 50px;
+    }
+
+    .product-item-image{
+        margin-top: 10px;
+    }
+    .main-container-section{
+        margin-top: 150px;
+    }
+  }
