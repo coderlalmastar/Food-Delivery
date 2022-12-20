@@ -4,6 +4,7 @@ import { categories } from "../utils/data";
 import { motion } from "framer-motion";
 import RowContainer from "./RowContainer";
 import { useStateValue } from "../context/StateProvider";
+import '../styles/commonStyle.css';
 
 const MenuContainer = () => {
   const [filter, setFilter] = useState("chicken");
@@ -17,7 +18,7 @@ const MenuContainer = () => {
           Our Hot Dishes
         </p>
 
-        <div className="w-full flex items-center justify-start lg:justify-center gap-8 py-6 overflow-x-scroll scrollbar-none">
+        <div className="categories w-full flex items-center justify-start lg:justify-center gap-8 py-6 overflow-x-scroll scrollbar-none">
           {categories &&
             categories.map((category) => (
               <motion.div
