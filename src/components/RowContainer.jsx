@@ -52,6 +52,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
                   src={item?.imageURL}
                   alt=""
                   className="w-full h-full object-contain"
+                  onClick={() => setItems([...cartItems, item])}
                 />
               </motion.div>
               <motion.div
